@@ -10,7 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   animated_text_kit: ^4.2.1
-
+  flutter_spinkit: ^5.0.0
   cupertino_icons: ^1.0.2
 
 dev_dependencies:

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'homePage.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 void main() {
   runApp(MyApp());
@@ -59,9 +60,13 @@ class _SplashScreenState extends State<SplashScreen> {
             SizedBox(
               height: 40.0,
             ),
-            CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-            )
+            // CircularProgressIndicator(
+            //   valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+            // ),
+            SpinKitPouringHourglass(
+              color: Colors.white,
+              size: 70.0,
+            ),
           ],
         ),
       ),
