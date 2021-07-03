@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 8), () {
+    Timer(Duration(seconds: 6), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (_) => HomePage(),
@@ -47,7 +47,7 @@ class _SplashScreenState extends State<SplashScreen> {
             AnimatedTextKit(
               animatedTexts: [
                 WavyAnimatedText(
-                  'L O A N L Y  B A N K',
+                  'S O C I A L I S E',
                   textStyle: TextStyle(
                     color: Colors.white,
                     fontSize: 54.0,
@@ -55,6 +55,9 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ),
               ],
+            ),
+            SizedBox(
+              height: 20.0,
             ),
             Image.asset(
               'images/front.png',
