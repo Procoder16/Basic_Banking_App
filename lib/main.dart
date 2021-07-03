@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'homePage.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'loginPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.dark(),
       home: SplashScreen(),
     );
   }
